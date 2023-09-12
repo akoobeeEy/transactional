@@ -17,8 +17,8 @@ function App() {
           <Route path="/debts" element={<Debts />} />
           <Route path="/transactional" element={<Transactional />} />
         </Route>
+      <Route path="*" element={<PageNotFound/>}/>
       </Routes>
-      <Routes path="*" element={<PageNotFound/>}/>
     </BrowserRouter>
   );
 }
